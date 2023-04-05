@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, StyleSheet, Image, Dimensions} from 'react-native';
+import {View, Text, SafeAreaView, StyleSheet, Image, Dimensions, TextInput} from 'react-native';
 import React from 'react';
 import { ScrollView } from 'react-native';
 import WeatherSearch from './search';
