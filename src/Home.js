@@ -8,7 +8,6 @@ const API_KEY = '7585b030c8803b9e89d288c053649ac2'
 const Home = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [loaded, setloaded] = useState(false);
-    // const [cityName, setCityName] = useState('')
 
     const fetchWeatherData = async (cityName) => {
         try {
@@ -29,7 +28,7 @@ const Home = () => {
     }
 
     useEffect(() => {
-        fetchWeatherData('Nairobi');
+        fetchWeatherData('Narok');
     }, []);
     if(!loaded) {
         return (

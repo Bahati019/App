@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView, StyleSheet, Image, Dimensions, TextInput} from 'react-native';
+import {View, Text, SafeAreaView, StyleSheet, Image, Dimensions} from 'react-native';
 import React from 'react';
 import { ScrollView } from 'react-native';
 import WeatherSearch from './search';
@@ -23,7 +23,7 @@ const WeatherInfo = ({weatherData, fetchWeatherData}) => {
                 <Image style={styles.largeIcon}
                 source={{uri: `http://openweathermap.org/img/wn/${icon}.png`}}
                 />
-                <Text style={styles.currentTemp}>{temp} °C</Text>
+                <Text style={styles.currentTemp}>{temp} k</Text>
             </View>
             <Text style={styles.description}>{description}</Text>
             <View style={styles.extraInfo}>
@@ -31,7 +31,7 @@ const WeatherInfo = ({weatherData, fetchWeatherData}) => {
                     <Image style={styles.smallIcon}
                     source={require('./Images/temp.png')}
                     />
-                    <Text style={styles.infoText}>{feels_like} °C</Text>
+                    <Text style={styles.infoText}>{feels_like} k</Text>
                     <Text style={styles.infoText}>Feels Like</Text>
                 </View>
                 <View style={styles.info}>
