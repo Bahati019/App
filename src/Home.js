@@ -23,7 +23,7 @@ const Home = () => {
             }
             setloaded(true);
         }catch(error) {
-            Alert.alert(Error, error.message)
+            Alert.alert("Error", error.message);
         } 
     }
 
